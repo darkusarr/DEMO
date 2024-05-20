@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заявления</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="site">
+    <nav>
+        <ul>
+          <li><a href="1.html">Регистрация</a></li>
+          <li><a href="2.html">Авторизация</a></li>
+          <li><a style="color: aliceblue;
+            background-color: #007bff;" href="3.html">Заявления</a></li>
+          <li><a href="4.html">Формирование заявления</a></li>
+          <li><a href="5.html">Админ панель</a></li>
+        </ul>
+      </nav>
+    <h1>Мои заявления</h1>
+    <table class="ttt">
+        <thead>
+            <tr>
+                <th>Номер</th>
+                <th>Описание</th>
+                <th>Статус</th>
+            </tr>
+            <tr>
+                <td>С389ХХ102</td>
+                <td>Проезд на красный свет светофора</td>
+                <td class="red">Отклонено</td>
+            </tr>
+            <tr>
+                <td>С389ХХ102</td>
+                <td>Проезд на красный свет светофора</td>
+                <td class="green">Подтверждено</td>
+            </tr>
+            <tr>
+                <td>С389ХХ102</td>
+                <td>Проезд на красный свет светофора</td>
+                <td class="yellow">Ожидание</td>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+    <form action="new_claim.php" method="post">
+        <h1>Формирование заявления</h1>
+        <label for="car_number">Государственный номер автомобиля:</label>
+        <input type="text" id="car_number" name="car_number" required><br>
+
+        <label for="description">Описание нарушения:</label>
+        <textarea id="description" name="description" rows="4" cols="50" required></textarea><br>
+
+        <button type="submit">Отправить заявление</button>
+    </form>
+</div>
+</body>
+</html>

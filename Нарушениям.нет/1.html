@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="site">
+    <nav>
+        <ul>
+          <li><a 
+          style="color: aliceblue;
+          background-color: #007bff;"
+           href="1.html">Регистрация</a></li>
+          <li><a href="2.html">Авторизация</a></li>
+          <li><a href="3.html">Заявления</a></li>
+          <li><a href="4.html">Формирование заявления</a></li>
+          <li><a href="5.html">Админ панель</a></li>
+        </ul>
+      </nav>
+    
+    <form action="register.php" method="post">
+        <h1>Регистрация</h1>
+        <label for="fio">ФИО:</label>
+        <input type="text" id="fio" name="fio" required><br>
+
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone" required><br>
+
+        <label for="email">Адрес электронной почты:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="login">Логин:</label>
+        <input type="text" id="login" name="login" required><br>
+
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+</div>
+</body>
+</html>
